@@ -86,9 +86,8 @@ nav{
 
 .hero{
     min-height:100vh;
-    display:flex;
-    align-items:center;
-    padding-top:80px;
+    padding-top:120px;
+    display:block;
 }
 
 .hero-content{
@@ -273,6 +272,31 @@ footer{
     padding:30px;
     color:var(--muted);
 }
+.hero-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid var(--primary);
+    box-shadow:0 0 30px rgba(56,189,248,.3);
+}
 
 /* MOBILE */
 
@@ -298,6 +322,19 @@ footer{
 .hero-buttons{
     justify-content:center;
 }
+.hero-wrapper{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-image{
+    justify-content:center;
+}
+
+.hero-image img{
+    width:250px;
+    height:250px;
+}
 
 }
 
@@ -310,7 +347,7 @@ footer{
 <div class="container nav-content">
 
 <a href="#top" class="logo">
-    <img src="photo.jpg" alt="Barsha Chand">
+    <img src="logo.png" alt="Logo">
 </a>
 
 <div class="nav-links">
@@ -328,49 +365,42 @@ footer{
 
 <div class="container">
 
-<div class="hero-content">
+<div class="hero-wrapper">
 
-<div class="hero-badge">
-ERP Consultant
-</div>
+    <div class="hero-image">
+        <img src="image.jpg" alt="Barsha Chand">
+    </div>
 
-<h1>
-    Hi, I'm
-    <span class="typing">Barsha Chand</span>
-</h1>
+    <div class="hero-content">
 
-<h3 class="hero-subtitle">
-ERP Consultant | Business Process Analyst | Digital Transformation Professional
-</h3>
+        <div class="hero-badge">
+            ERP Consultant
+        </div>
 
-<p class="hero-description">
-I help organizations to streamline operations and improve business performance through SAP Business One implementation, process optimization, and ERP consulting. My expertise lies in aligning business requirements with technology solutions, ensuring efficient workflows, accurate reporting, and sustainable growth.
-</p>
+        <h1>
+            Hi, I'm
+            <span class="typing">Barsha Chand</span>
+        </h1>
 
-<div class="skill-tags">
-<span class="skill">SAP Business One</span>
-<span class="skill">ERP Implementation</span>
-<span class="skill">Business Analysis</span>
-<span class="skill">Process Optimization</span>
-<span class="skill">Requirement Gathering</span>
-<span class="skill">User Training</span>
-<span class="skill">System Testing</span>
-<span class="skill">Business Requirement Documenting and Functional Requirement Documenting</span>
-</div>
+        <h3 class="hero-subtitle">
+            ERP Consultant | Business Process Analyst | Digital Transformation Professional
+        </h3>
 
-<p class="hero-quote">
-"Transforming business challenges into efficient enterprise solutions."
-</p>
+        <p class="hero-description">
+            I help organizations streamline operations and improve business performance through SAP Business One implementation, process optimization, and ERP consulting.
+        </p>
 
-<div class="hero-buttons">
-<a href="#projects" class="btn">View My Work</a>
-<a href="resume.pdf" class="btn btn-outline">Download Resume</a>
-</div>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="resume.pdf" class="btn btn-outline">Download Resume</a>
+        </div>
+
+    </div>
 
 </div>
+    </div>
 
 </div>
-
 </section>
 
 <section id="about">
