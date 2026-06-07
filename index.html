@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Barsha Chand | SAP Business One Consultant</title>
+<title>Barsha Chand | ERP Consultant</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -56,10 +56,19 @@ nav{
     padding:20px 0;
 }
 
-.logo{
-    font-size:1.5rem;
-    font-weight:700;
-    color:var(--primary);
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .nav-links a{
@@ -118,7 +127,34 @@ nav{
     margin:25px 0;
     font-size:1.05rem;
 }
+.typing {
+      position: relative;
+    top: 13px;
+    display: inline-block;
+    vertical-align: baseline;
+    overflow: hidden;
+    white-space: nowrap;    
+    border-right: 3px solid var(--primary);
+    width: 0;
+    animation:
+        typing 3s steps(12, end) forwards,
+        blink 0.8s step-end 5s;
+}
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 .skill-tags{
     display:flex;
     flex-wrap:wrap;
@@ -145,6 +181,7 @@ nav{
     gap:15px;
     flex-wrap:wrap;
 }
+
 
 .btn{
     display:inline-block;
@@ -241,6 +278,7 @@ footer{
 
 @media(max-width:768px){
 
+    
 .hero h1{
     font-size:2.8rem;
 }
@@ -266,12 +304,14 @@ footer{
 </style>
 </head>
 
-<body>
+<body id="top">
 
 <nav>
 <div class="container nav-content">
 
-<div class="logo">BARSHA</div>
+<a href="#top" class="logo">
+    <img src="photo.jpg" alt="Barsha Chand">
+</a>
 
 <div class="nav-links">
 <a href="#about">About</a>
@@ -291,11 +331,12 @@ footer{
 <div class="hero-content">
 
 <div class="hero-badge">
-SAP Business One Consultant
+ERP Consultant
 </div>
 
 <h1>
-Hi, I'm <span>Barsha Chand</span>
+    Hi, I'm
+    <span class="typing">Barsha Chand</span>
 </h1>
 
 <h3 class="hero-subtitle">
@@ -303,7 +344,7 @@ ERP Consultant | Business Process Analyst | Digital Transformation Professional
 </h3>
 
 <p class="hero-description">
-I help organizations streamline operations and improve business performance through SAP Business One implementation, process optimization, and ERP consulting. My expertise lies in aligning business requirements with technology solutions, ensuring efficient workflows, accurate reporting, and sustainable growth.
+I help organizations to streamline operations and improve business performance through SAP Business One implementation, process optimization, and ERP consulting. My expertise lies in aligning business requirements with technology solutions, ensuring efficient workflows, accurate reporting, and sustainable growth.
 </p>
 
 <div class="skill-tags">
@@ -314,6 +355,7 @@ I help organizations streamline operations and improve business performance thro
 <span class="skill">Requirement Gathering</span>
 <span class="skill">User Training</span>
 <span class="skill">System Testing</span>
+<span class="skill">Business Requirement Documenting and Functional Requirement Documenting</span>
 </div>
 
 <p class="hero-quote">
