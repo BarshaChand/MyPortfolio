@@ -1,0 +1,466 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barsha Chand | SAP Business One Consultant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --primary:#38bdf8;
+    --text:#f8fafc;
+    --muted:#94a3b8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:80px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:rgba(56,189,248,.15);
+    color:var(--primary);
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+}
+
+.hero h1 span{
+    color:var(--primary);
+}
+
+.hero-subtitle{
+    color:var(--muted);
+    font-size:1.3rem;
+    margin-top:15px;
+}
+
+.hero-description{
+    color:var(--muted);
+    line-height:1.9;
+    margin:25px 0;
+    font-size:1.05rem;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:30px 0;
+}
+
+.skill{
+    background:var(--card);
+    color:var(--primary);
+    border:1px solid rgba(56,189,248,.3);
+    padding:10px 16px;
+    border-radius:30px;
+}
+
+.hero-quote{
+    color:var(--primary);
+    font-style:italic;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--primary);
+    color:#0f172a;
+    padding:14px 26px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.about{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+    color:var(--muted);
+}
+
+.skills-grid,
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card p{
+    margin-top:10px;
+    color:var(--muted);
+}
+
+.timeline{
+    max-width:800px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.socials{
+    margin-top:25px;
+}
+
+.socials a{
+    color:var(--primary);
+    text-decoration:none;
+    margin:0 12px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:var(--muted);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+.hero{
+    text-align:center;
+}
+
+.skill-tags{
+    justify-content:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav-content">
+
+<div class="logo">BARSHA</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+SAP Business One Consultant
+</div>
+
+<h1>
+Hi, I'm <span>Barsha Chand</span>
+</h1>
+
+<h3 class="hero-subtitle">
+ERP Consultant | Business Process Analyst | Digital Transformation Professional
+</h3>
+
+<p class="hero-description">
+I help organizations streamline operations and improve business performance through SAP Business One implementation, process optimization, and ERP consulting. My expertise lies in aligning business requirements with technology solutions, ensuring efficient workflows, accurate reporting, and sustainable growth.
+</p>
+
+<div class="skill-tags">
+<span class="skill">SAP Business One</span>
+<span class="skill">ERP Implementation</span>
+<span class="skill">Business Analysis</span>
+<span class="skill">Process Optimization</span>
+<span class="skill">Requirement Gathering</span>
+<span class="skill">User Training</span>
+<span class="skill">System Testing</span>
+</div>
+
+<p class="hero-quote">
+"Transforming business challenges into efficient enterprise solutions."
+</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="btn">View My Work</a>
+<a href="resume.pdf" class="btn btn-outline">Download Resume</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+<p>
+I am a dedicated SAP Business One Consultant with experience in business process analysis, ERP implementation, user training, testing, and system support. I work closely with stakeholders to understand business challenges and deliver practical ERP solutions that improve efficiency, enhance productivity, and support digital transformation initiatives.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="card">
+<h3>ERP Implementation</h3>
+<p>System setup, configuration, deployment and support.</p>
+</div>
+
+<div class="card">
+<h3>Business Process Analysis</h3>
+<p>Analyzing workflows and identifying process improvements.</p>
+</div>
+
+<div class="card">
+<h3>Requirement Gathering</h3>
+<p>Understanding and documenting business requirements.</p>
+</div>
+
+<div class="card">
+<h3>User Training</h3>
+<p>End-user training and post-implementation support.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+<div class="card">
+<h3>SAP Business One Implementation</h3>
+<p>Supported ERP implementation and business process optimization initiatives.</p>
+</div>
+
+<div class="card">
+<h3>Workflow Automation</h3>
+<p>Improved operational efficiency through process standardization.</p>
+</div>
+
+<div class="card">
+<h3>ERP User Training</h3>
+<p>Delivered training and support to ensure successful ERP adoption.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<div class="container">
+
+<h2 class="section-title">Education & Certifications</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Your Degree</h3>
+<p>Add your university and graduation year here.</p>
+</div>
+
+<div class="timeline-item">
+<h3>SAP Business One Experience</h3>
+<p>Add certifications, training, or professional achievements.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: your-email@example.com</p>
+<p>Kathmandu, Nepal</p>
+
+<br>
+
+<a href="resume.pdf" class="btn">
+Download Resume
+</a>
+
+<div class="socials">
+<a href="https://www.linkedin.com/in/barsha-chand-698a9b24b/" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Barsha Chand | SAP Business One Consultant
+</footer>
+
+</body>
+</html>
+```
