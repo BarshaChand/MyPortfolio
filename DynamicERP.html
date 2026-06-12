@@ -1,4 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barsha Chand | ERP Consultant</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+<!-- HEADER (loaded dynamically) -->
+<header id="header"></header>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
 <section class="blog-post">
+ 
     <h1>Dynamic ERP: Empowering Nepali Businesses Through Digital Transformation</h1>
 
     <p>
@@ -183,3 +209,17 @@
     </p>
 </div>
 </section>
+
+<!-- FOOTER -->
+<footer id="footer"></footer>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>
